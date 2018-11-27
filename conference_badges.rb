@@ -4,11 +4,10 @@ names = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
 
 def badge_maker(name)
   badge = "Hello, my name is #{name}."
-  return badge
 end
 
 def batch_badge_creator(names)
-  names.each { |x| "Hello, my name is #{x}."}
+  names.map { |x| "Hello, my name is #{x}."}
 end
 
 def assign_rooms(names)
